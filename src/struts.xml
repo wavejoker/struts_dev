@@ -5,5 +5,14 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+    <!--struts 常量配置-->
+    <include file="struts/constant.xml"/>
+
+    <!--模块配置-->
     <include file="struts/struts-user.xml"/>
+    <include file="struts/struts-path.xml"/>
+    <include file="struts/struts-constant.xml"/>
+    <include file="struts/struts-ioc.xml"/>
+    <include file="struts/struts-scope.xml"/>
+    <include file="struts/struts-data.xml"/>
 </struts>

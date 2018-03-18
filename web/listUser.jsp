@@ -9,7 +9,7 @@
   <body>
   	<h3>request域</h3>
     <table border="1">
-    <c:forEach items="${requestScope.request_list}" var="user">
+    <c:forEach items="${requestScope.requestMap}" var="user">
     	<tr>
     		<td>${user}</td>
     	</tr>
@@ -18,7 +18,7 @@
     <hr/>
     <h3>session域</h3>
     <table border="1">
-    <c:forEach items="${sessionScope.session_list}" var="user">
+    <c:forEach items="${sessionScope.sessionMap}" var="user">
     	<tr>
     		<td>${user}</td>
     	</tr>
@@ -26,7 +26,7 @@
     </table>
     <h3>context域</h3>
     <table border="1">
-    <c:forEach items="${applicationScope.context_list}" var="user">
+    <c:forEach items="${applicationScope.contextMap}" var="user">
     	<tr>
     		<td>${user}</td>
     	</tr>

@@ -5,12 +5,9 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-
-    <package name="book" extends="struts-default" namespace="/book">
-        <action name="*_*" class="action.book.{1}Action" method="{2}">
-            <result name="{2}">
-                /{1}/{2}.jsp
-            </result>
+    <package name="data" extends="struts-default" namespace="/data">
+        <action name="user_*" class="action.data.UserLogin" method="{1}">
+            <result name="success">/{1}.jsp</result>
         </action>
     </package>
 </struts>

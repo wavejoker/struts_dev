@@ -8,7 +8,7 @@
   
   <body>
     
-    <form action="${pageContext.request.contextPath }/data/user_register.action" method="post">
+    <form action="/data/user_register.action" method="post">
     	用户名： <input type="text" name="user.name"/><br/>
     	密码： <input type="password" name="user.password"/><br/>
     	性别： <input type="radio" name="user.gender" value="男"/>男

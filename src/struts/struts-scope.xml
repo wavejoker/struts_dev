@@ -5,12 +5,10 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-
-    <package name="book" extends="struts-default" namespace="/book">
-        <action name="*_*" class="action.book.{1}Action" method="{2}">
-            <result name="{2}">
-                /{1}/{2}.jsp
-            </result>
+    <package name="scope" extends="struts-default" namespace="/scope">
+        <action name="scope" class="action.scope.ScopeAction" method="scope">
+            <result name="success">/listUser.jsp</result>
         </action>
     </package>
+
 </struts>
