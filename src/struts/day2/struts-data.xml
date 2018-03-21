@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="data" extends="struts-default" namespace="/data">
+        <action name="user_*" class="action.day2.data.UserLogin" method="{1}">
+            <result name="success">/{1}.jsp</result>
+        </action>
+        <action name="register">
+            <result>/register.jsp</result>
+        </action>
+        <action name="register1">
+            <result>/register2.jsp</result>
+        </action>
+    </package>
+</struts>

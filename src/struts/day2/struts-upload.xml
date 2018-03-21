@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="upload" extends="struts-default" namespace="/upload">
+        <action name="upload" class="action.day2.upload.UploadAction" method="execute">
+            <interceptor-ref name="defaultStack">
+                <param name="fileUpload.allowedTypes">image/jpeg,image/jpg</param>
+            </interceptor-ref>
+            <param name="savePath">e:/upload/</param>
+            <result>/login.jsp</result>
+            <result name="input">/error.jsp</result>
+        </action>
+
+        <action name="down_*" class="action.day2.upload.DownloadAction" method="{1}">
+            <param name="savePath">e:/upload/</param>
+            <result name="list">/listFile.jsp</result>
+            <result type="stream" name="down">
+                <!--返回给浏览器的文件类型, 返回通常用二进制-->
+                <param name="contentType">applicantion/octet-stream</param>
+                <!--返回给浏览器的输入流-->
+                <param name="inputName">inputStream</param>
+                <!--告诉浏览器以下载的方式下载资源-->
+                <param name="contentDisposition">attachment=${name}</param>
+                <!--缓存大小-->
+                <param name="bufferSize">1024</param>
+            </result>
+        </action>
+
+
+    </package>
+</struts>

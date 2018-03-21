@@ -7,7 +7,7 @@
   </head>
   
   <body>
-    <form action="${pageContext.request.contextPath }/upload/upload.action"  method="post" enctype="multipart/form-data">
+    <form action="/upload/upload.action"  method="post" enctype="multipart/form-data">
     	文件:<input type="file" name="attach"/><br/>
     	描述：<input type="text" name="info"/><br/>
     	<input type="submit" value="上传"/>

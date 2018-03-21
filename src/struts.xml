@@ -6,13 +6,16 @@
 
 <struts>
     <!--struts 常量配置-->
-    <include file="struts/constant.xml"/>
+    <include file="struts/day2/constant.xml"/>
 
     <!--模块配置-->
-    <include file="struts/struts-user.xml"/>
-    <include file="struts/struts-path.xml"/>
-    <include file="struts/struts-constant.xml"/>
-    <include file="struts/struts-ioc.xml"/>
-    <include file="struts/struts-scope.xml"/>
-    <include file="struts/struts-data.xml"/>
+    <include file="struts/day2/struts-user.xml"/>
+    <include file="struts/day2/struts-path.xml"/>
+    <include file="struts/day2/struts-constant.xml"/>
+    <include file="struts/day2/struts-ioc.xml"/>
+    <include file="struts/day2/struts-scope.xml"/>
+    <include file="struts/day2/struts-data.xml"/>
+    <include file="struts/day2/struts-convert.xml"/>
+    <include file="struts/day2/struts-upload.xml"/>
+    <include file="struts/day3/struts-interceptor.xml"/>
 </struts>
